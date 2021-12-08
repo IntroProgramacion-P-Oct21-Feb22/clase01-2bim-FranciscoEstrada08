@@ -12,15 +12,16 @@ package paquete01;
 public class Ejemplo07 {
     public static void main(String[] args) {
         int operacion;
+        String cadena = "";
         
-        for (int i = 1; i <= 10; i++) { // for 01
-            System.out.printf("Tabla de multiplicar del número %d\n", i);
+        for (int i = 1; i <= 12; i++) { // for 01
+            cadena=String.format("%sTabla de multiplicar del número %d\n",cadena,i);
             
             for (int contador = 1; contador <= 12; contador++) {
                 operacion = i * contador;
-                System.out.printf("%d x %d = %d\n", i, contador, operacion);
+                cadena = String.format("%s%d x %d = %d\n",cadena,i,contador,operacion);
             }
-            System.out.println("\n");
+            System.out.println(cadena);
         } // termina for 01
     }
 }

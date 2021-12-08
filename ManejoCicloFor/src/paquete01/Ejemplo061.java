@@ -20,24 +20,24 @@ public class Ejemplo061 {
         int operacion;
         
         for (int contador = 1; contador <= 12; contador++) {
-            operacion = 1 * contador;
+            operacion = contador * contador;
             System.out.printf("%d x %d = %d\n", 1, contador, operacion);
         }
         
         
         for (int contador = 1; contador <= 12; contador++) {
-            operacion = 2 * contador;
+            operacion = contador * contador;
             System.out.printf("%d x %d = %d\n", 2, contador, operacion);
         }
         
         
         for (int contador = 1; contador <= 12; contador++) {
-            operacion = 3 * contador;
+            operacion = contador * contador;
             System.out.printf("%d x %d = %d\n", 3, contador, operacion);
         }
         
         for (int contador = 1; contador <= 12; contador++) {
-            operacion = 4 * contador;
+            operacion = contador * contador;
             System.out.printf("%d x %d = %d\n", 4, contador, operacion);
         }
         

@@ -18,7 +18,7 @@ public class Ejemplo02 {
         int i;
         
         for (i = 0; i < 10; i++) {
-            System.out.printf("%d", i);
+            System.out.printf("%d\n", i);
         }
 
         System.out.printf("%d\n", i);

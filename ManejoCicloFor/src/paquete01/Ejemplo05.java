@@ -11,6 +11,10 @@
  */
 package paquete01;
 
+
+
+import java.util.Locale;
+import java.util.Scanner;
 /**
  *
  * @author reroes
@@ -21,17 +25,21 @@ public class Ejemplo05 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
+        Scanner entrada = new Scanner(System.in);
+        entrada.useLocale(Locale.US);
+
         // 2. numero, i[0, n]
         int numero;
         // 3. potencia, i[0, n]
         int potencia;
         // 6. resultado, i[0, n]
-        int resultado;
-        // numero <-- 4
-        numero = 10;
-        // 8. potencia <-- 3
-        potencia = 3;
-        // 9. resultado <-- 1
+        int resultado;   
+        System.out.println("Ingrese el numero a elevar");
+        numero = entrada.nextInt();
+        
+        System.out.println("Ingrese la potencia a elevar");
+        potencia = entrada.nextInt();
+        
         resultado = 1;
         
         for (int  contador = 1; contador <= potencia; contador++) {
